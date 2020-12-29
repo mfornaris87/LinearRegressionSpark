@@ -1,0 +1,46 @@
+Calculating summary statistics
+
+Summary statistics is used to summarize observations to get a collective sense of the data. The summary includes the following:
+
+    Central tendency of data—mean, mode, median
+
+    Spread of data—variance, standard deviation
+
+    Boundary conditions—min, max
+
+This recipe covers how to produce summary statistics.
+How to do it…
+
+    Start the Spark shell:
+
+$ spark-shell
+
+Import the matrix-related classes:
+
+scala> import org.apache.spark.mllib.linalg.{Vectors,Vector}
+scala> import org.apache.spark.mllib.stat.Statistics
+
+Create a personRDD as RDD of vectors:
+
+scala> val personRDD = sc.parallelize(List(Vectors.dense(150,60,25), Vectors.dense(300,80,40)))
+
+Compute the column summary statistics:
+
+scala> val summary = Statistics.colStats(personRDD)
+
+Print the mean of this summary:
+
+scala> print(summary.mean)
+
+Print the variance:
+
+scala> print(summary.variance)
+
+Print the non-zero values in each column:
+
+scala> print(summary.numNonzeros)
+
+Print the sample size:
+
+    scala> print(summary...
+

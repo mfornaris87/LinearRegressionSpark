@@ -1,0 +1,4 @@
+Poner antes de generar el esquema:
+
+val sparkConf = new SparkConf().setAppName("sparkExample").setMaster("local[*]")
+val sc = new SparkContext(sparkConf)

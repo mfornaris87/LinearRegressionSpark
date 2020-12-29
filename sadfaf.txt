@@ -1,0 +1,3 @@
+linear support vector machine
+one versus rest classifier, primero hace regresion logistica y luego 
+isotonic regression

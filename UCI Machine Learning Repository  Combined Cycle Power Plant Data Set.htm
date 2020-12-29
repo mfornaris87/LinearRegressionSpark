@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>UCI Machine Learning Repository: Combined Cycle Power Plant Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="UCI%20Machine%20Learning%20Repository%20%20Combined%20Cycle%20Power%20Plant%20Data%20Set_files/ml.css">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width="100%" bgcolor="#003366">
+<tbody><tr>
+	<td>
+		<span class="normal"><a href="https://archive.ics.uci.edu/ml/index.html" alt="Home"><img src="UCI%20Machine%20Learning%20Repository%20%20Combined%20Cycle%20Power%20Plant%20Data%20Set_files/logo.gif" border="0"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu/"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width="100%" valign="top" align="right">
+		<span class="whitetext">
+		<a href="https://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;
+		<a href="https://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="https://archive.ics.uci.edu/ml/donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="https://archive.ics.uci.edu/ml/contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<form method="GET" action="http://www.google.com/custom" onsubmit="return checkform(this);">
+		<input type="text" name="q" size="30" maxlength="255">
+		<input type="submit" name="sa" value="Search">
+		<input type="hidden" name="cof" value="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type="hidden" name="domains" value="ics.uci.edu">
+		<br>
+		<input type="radio" name="sitesearch" value="ics.uci.edu" checked="checked"> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type="radio" name="sitesearch" value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.google.com/search"><img src="UCI%20Machine%20Learning%20Repository%20%20Combined%20Cycle%20Power%20Plant%20Data%20Set_files/Logo_25blk.gif" alt="Google" height="27" border="0" align="middle"></a>
+		<br>
+		</form>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="https://archive.ics.uci.edu/ml/datasets.html"><font size="3" color="#FFDD33"><b>View
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<table width="100%" cellpadding="2" border="0"><tbody><tr><td>
+
+   <table><tbody><tr>
+     <td valign="top">
+	<p>
+	<span class="heading"><b>Combined Cycle Power Plant Data Set</b></span>
+	<br><span class="normal"><i><font size="4">Download</font></i>: <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/00294/"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Folder</font></a>, <a href="#"><font style="BACKGROUND-COLOR: #FFFFAA" size="4">Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: The dataset contains 9568 data 
+points collected from a Combined Cycle Power Plant over 6 years 
+(2006-2011), when the plant was set to work with full load. </p>
+     </td>
+     <td> </td>
+   </tr></tbody></table>
+
+<table cellpadding="6" border="1">
+	<tbody><tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">9568</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Computer</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">4</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">2014-03-26</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Regression</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">N/A</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">113736</p></td>
+	</tr>
+	<!--
+	<tr>
+
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</tbody></table>
+
+
+<br>
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">Pınar Tüfekci, Çorlu Faculty of Engineering, Namık Kemal University, TR-59860 Çorlu, Tekirdağ, Turkey<br>Email: <u>ptufekci <b>'@'</b> nku.edu.tr</u><br><br>Heysem Kaya, Department of Computer Engineering, Boğaziçi University, TR-34342, Beşiktaş, İstanbul, Turkey<br>Email: <u>heysem <b>'@'</b> boun.edu.tr</u></p>
+
+<br>
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">The dataset contains 9568 data points collected from a
+ Combined Cycle Power Plant over 6 years (2006-2011), when the power 
+plant was set to work with full load. Features consist of hourly average
+ ambient variables Temperature (T), Ambient Pressure (AP), Relative 
+Humidity (RH) and Exhaust Vacuum (V) to predict the net hourly 
+electrical energy output (EP)  of the plant.<br>A combined cycle power 
+plant (CCPP) is composed of gas turbines (GT), steam turbines (ST) and 
+heat recovery steam generators. In a CCPP, the electricity is generated 
+by gas and steam turbines, which are combined in one cycle, and is 
+transferred from one turbine to another. While the Vacuum is colected 
+from and has effect on the Steam Turbine, he other three of the ambient 
+variables effect the GT performance.<br>For comparability with our 
+baseline studies, and to allow 5x2 fold statistical tests be carried 
+out, we provide the data shuffled five times. For each shuffling 2-fold 
+CV is carried out and the resulting 10 measurements are used for 
+statistical testing.<br>We provide the data both in .ods and in .xlsx formats.</p>
+
+<br>
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">Features consist of hourly average ambient variables <br>- Temperature (T) in the range 1.81°C and 37.11°C,<br>- Ambient Pressure (AP) in the range 992.89-1033.30 milibar,<br>- Relative Humidity (RH) in the range 25.56% to 100.16%<br>- Exhaust Vacuum (V) in teh range 25.36-81.56 cm Hg<br>- Net hourly electrical energy output (EP) 420.26-495.76 MW<br>The
+ averages are taken from various sensors located around the plant that 
+record the ambient variables every second. The variables are given 
+without normalization. </p>
+
+<br>
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Pınar Tüfekci, Prediction of full load electrical 
+power output of a base load operated combined cycle power plant using 
+machine learning methods, International Journal of Electrical Power 
+&amp; Energy Systems, Volume 60, September 2014, Pages 126-140, ISSN 
+0142-0615, <a href="http://dx.doi.org/10.1016/j.ijepes.2014.02.027">[Web Link]</a>. (<a href="http://www.sciencedirect.com/science/article/pii/S0142061514000908">[Web Link]</a>)<br><br>Heysem
+ Kaya, Pınar Tüfekci , Sadık Fikret Gürgen: Local and Global Learning 
+Methods for Predicting Power of a Combined Gas &amp; Steam Turbine, 
+Proceedings of the International Conference on Emerging Trends in 
+Computer and Electronics Engineering ICETCEE 2012, pp. 13-18 (Mar. 2012,
+ Dubai)</p>
+
+<br>
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">N/A</p>
+
+-->
+
+
+
+<br>
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Pınar Tüfekci, Prediction of full load electrical 
+power output of a base load operated combined cycle power plant using 
+machine learning methods, International Journal of Electrical Power 
+&amp; Energy Systems, Volume 60, September 2014, Pages 126-140, ISSN 
+0142-0615, <a href="http://dx.doi.org/10.1016/j.ijepes.2014.02.027">[Web Link]</a>.<br>(<a href="http://www.sciencedirect.com/science/article/pii/S0142061514000908">[Web Link]</a>)<br><br>Heysem
+ Kaya, Pınar Tüfekci , Sadık Fikret Gürgen: Local and Global Learning 
+Methods for Predicting Power of a Combined Gas &amp; Steam Turbine, 
+Proceedings of the International Conference on Emerging Trends in 
+Computer and Electronics Engineering ICETCEE 2012, pp. 13-18 (Mar. 2012,
+ Dubai)</p>
+
+</td></tr></tbody></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+
+
+<table cellpadding="5" align="center"><tbody><tr valign="center">
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository%20%20Combined%20Cycle%20Power%20Plant%20Data%20Set_files/nsfe.gif" height="60"> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="UCI%20Machine%20Learning%20Repository%20%20Combined%20Cycle%20Power%20Plant%20Data%20Set_files/rexaSmall.jfif"></td>
+</tr></tbody></table>
+
+<center>
+<span class="normal">
+<a href="https://archive.ics.uci.edu/ml/about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="https://archive.ics.uci.edu/ml/citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="https://archive.ics.uci.edu/ml/donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="https://archive.ics.uci.edu/ml/contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu/">CML</a>
+</span>
+</center>
+
+
+
+
+
+
+</body></html>
